@@ -1,0 +1,179 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://images.alphacoders.com/133/1330313.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ccc; /* Color de texto principal */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #ff3399;
+  padding: 20px;
+  font-size: 2em; /* Tamaño de fuente aumentado */
+}
+
+/* Formulario de carga */
+#uploadForm {
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  color: #fff; /* Color de texto en el contenedor */
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px auto; /* Ajusta el margen para centrar el contenedor */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Etiquetas de entrada */
+label {
+  display: block;
+  margin-top: 10px;
+  color: #ff3399;
+  font-weight: bold;
+}
+
+/* Campos de entrada de texto */
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ff3399; /* Borde del campo de entrada */
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  color: #fff; /* Color del texto en el campo de entrada */
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box; /* Ajusta el tamaño para incluir el relleno y el borde */
+}
+
+/* Botón de carga */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff3399;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #ff4d99;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff3399;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn-volver:hover {
+  background: #ff4d99;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Resto de tus estilos */
+
+/* Modal */
+.modal {
+  display: none; /* Ocultar por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  transition: opacity 0.5s;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: #1e1e1e; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Botón de cierre */
+.close {
+  color: #ff4d99; /* Color rosa */
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff3399; /* Color más claro al pasar el mouse */
+}
+
+/* Estilos para los botones */
+.modal-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-button:focus {
+  outline: none;
+}
+
+.success-message {
+  background-color: #171717; /* Fondo blanco */
+  color: #ffffff; /* Texto principal */
+  border: 2px solid #0b8623; /* Borde verde */
+  padding: 20px;
+  text-shadow: #171717;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.success-message:hover {
+  background-color: #1e2020; /* Color de fondo más claro al pasar el mouse */
+}
+
+.error-message {
+  background-color: #8f0e0e; /* Rojo oscuro para mensaje de error */
+  color: #fff;
+}
+
+.error-message:hover {
+  background-color: #7d0d0d; /* Color más oscuro al pasar el mouse */
+}

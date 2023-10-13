@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Canciones</title>
+    <link rel="stylesheet" href="css/player.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="songInfo">
+        <!-- Aquí se mostrará el nombre de la canción, artista y la portada de la canción -->
+    </div>
+
+    <div id="player">
+        <!-- Barra de estado, tiempo de inicio y fin -->
+        <div id="seekContainer">
+            <span id="currentTime">0:00</span>
+            <input id="seekSlider" type="range" min="0" step="1" value="0">
+            <span id="duration">0:00</span>
+        </div>
+    
+        <!-- Reproductor de audio y controles -->
+        <div id="controls">
+            <button id="decelerateBtn"><i class="fas fa-backward"></i></button>
+            <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+            <button id="accelerateBtn"><i class="fas fa-forward"></i></button>
+            <button id="resetSpeedBtn"><i class="fas fa-stop"></i></button>
+        </div>
+    
+        <!-- Volumen y descarga -->
+        <div id="additionalControls">
+            <button id="volumeBtn"><i class="fas fa-volume-up"></i></button>
+            <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="1">
+            <button id="downloadBtn"><i class="fas fa-download"></i></button>
+        </div>
+        <a href="/" class="btn-volver"></i> Volver </a>
+    </div>
+
+    <script src="js/player.js"></script>
+</body>
+
+</html>

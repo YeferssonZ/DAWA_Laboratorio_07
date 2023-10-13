@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://static.zerochan.net/NIKKE%3A.The.Goddess.Of.Victory.full.4021441.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Encabezado */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.btn-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff3399;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn-upload:hover {
+  background: #ff4d99;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+/* Lista de canciones */
+.song-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.song-list li {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.song-list li:hover {
+  background: #ff3399;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de página */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Estilo de enlace */
+a {
+  text-decoration: none;
+  color: #ff3399;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff4d99;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}

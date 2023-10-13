@@ -1,0 +1,211 @@
+*:focus {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  background: url('https://images3.alphacoders.com/132/1322308.jpeg') center center;
+  background-size: cover;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #ff3399;
+}
+
+#backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#songInfo {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#songInfo img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#songInfo h2, #songInfo p {
+  margin: 10px;
+  color: #fff;
+}
+
+#player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#seekContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#seekSlider {
+  flex: 1;
+  background: #333;
+  height: 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+#seekSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ff3399;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#currentTime, #duration {
+  font-size: 1em;
+  color: #fff;
+  margin: 0 10px;
+}
+
+#controls, #additionalControls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#controls button, #additionalControls button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin: 0 5px;
+}
+
+#controls button:hover, #additionalControls button:hover {
+  color: #ff3399;
+}
+
+#volumeSlider {
+  width: 60px;
+  background: #333;
+  height: 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ff3399;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff3399;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn-volver:hover {
+  background: #ff4d99;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+#seekSlider {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background: #333;
+  height: 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+#seekSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ff3399;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volumeSlider {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background: #333;
+  height: 5px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ff3399;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#currentTime, #duration {
+  font-size: 1em;
+  display: inline-block;
+  color: #fff;
+  margin: 10px;
+}
+
+a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #ff3399;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+
